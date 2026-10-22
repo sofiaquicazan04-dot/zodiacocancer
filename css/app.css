@@ -51,6 +51,11 @@ canvas {
     z-index: 2000;
     transition: opacity 0.4s ease;
 }
+
+#overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
 #overlay .imagen_fondo {
     position: absolute;
     inset: 0;
@@ -70,11 +75,6 @@ canvas {
     background-repeat: no-repeat;
     background-position: center;
 }
-#overlay.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
 #start-button {
     padding: 14px 36px;
     font-size: 16px;
